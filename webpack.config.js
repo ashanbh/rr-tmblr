@@ -4,7 +4,7 @@ module.exports = {
   entry: [
     'promise-polyfill',
     'whatwg-fetch',
-    './src/js/app.js'
+    './src/app.js'
   ],
   module: {
     rules: [
@@ -19,6 +19,15 @@ module.exports = {
               }
           }
         ]
+      },
+      {
+        test: /\.html$/,
+        use: [ {
+          loader: 'html-loader',
+          options: {
+            minimize: true
+          }
+        }],
       }
     ]
   },

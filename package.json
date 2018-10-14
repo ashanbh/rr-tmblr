@@ -7,12 +7,13 @@
     "start": "node index.js",
     "startDev": "nodemon --inspect index.js",
     "build": "webpack -d --config ./webpack.config.js --mode production",
-    "buildWatch":  "webpack -d --watch --config ./webpack.config.js --mode development",
+    "buildWatch": "webpack -d --watch --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.7.5",
     "express": "^4.16.4",
     "promise-polyfill": "^8.1.0",
     "whatwg-fetch": "^3.0.0"
@@ -22,6 +23,7 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
+    "html-loader": "^0.5.5",
     "nodemon": "^1.18.4",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"

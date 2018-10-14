@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+button, .btn{
+  margin-top: 5px;
+  color: #fff;
+  background: #c0c0c0;
+  padding: 10px;
+  border: 0;
+  outline: none !important;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:hover, .btn:hover{
+  background: #000;
+  cursor: pointer;
+}
+
+.searchBar_wpr{
+  margin: 20px 0;
+}
+
+.searchBar input::placeholder{
+  text-transform: uppercase;
+}
+
+.searchBar input{
+  padding: 10px;
+  outline: none !important;
+  border: 0;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.app{
+  max-width: 1000px;
+  margin: 0px auto;
+
+}
+
+.app .header{
+  padding: 20px;
+  text-align: center;
+}
+
+.app .post{
+  width: calc(100% / 3);
+  display: inline-block;
+}
