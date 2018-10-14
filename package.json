@@ -7,12 +7,15 @@
     "start": "node index.js",
     "startDev": "nodemon --inspect index.js",
     "build": "webpack -d --config ./webpack.config.js --mode production",
+    "buildWatch":  "webpack -d --watch --config ./webpack.config.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "promise-polyfill": "^8.1.0",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
