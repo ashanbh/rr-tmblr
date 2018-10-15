@@ -48,7 +48,14 @@ button:hover, .btn:hover{
   text-align: center;
 }
 
-.app .post{
+.app .postList {
+  text-align: center;
+}
+.app .postList img{
   width: calc(100% / 3);
   display: inline-block;
+  vertical-align: top;
+  padding: 10px;
 }
+
+@
