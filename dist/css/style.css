@@ -58,4 +58,8 @@ button:hover, .btn:hover{
   padding: 10px;
 }
 
-@
+@media only screen and (max-width: 700px) {
+  .app .postList img{
+    width: 100%;
+  }
+}
