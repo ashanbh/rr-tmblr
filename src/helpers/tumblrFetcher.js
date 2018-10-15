@@ -2,7 +2,7 @@ import 'whatwg-fetch';
 import API_KEY from '.././config.js';
 
 const fetchData = (blogName) => {
-  return window.fetch('https://api.tumblr.com/v2/blog/' + blogName + '/posts?api_key=' + API_KEY)
+  return window.fetch('https://api.tumblr.com/v2/blog/' + blogName.toLowerCase() + '/posts?api_key=' + API_KEY)
   .then((data) => {
     return data.json();
   })

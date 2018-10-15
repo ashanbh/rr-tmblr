@@ -65,6 +65,7 @@ button:hover, .btn:hover{
   background: #f3f3f3;
   color: #000;
   background-size: cover;
+  background-position: center;
   padding-top: calc(100% - 50px);
 }
 
