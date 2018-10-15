@@ -14,9 +14,11 @@ export default {
         if (posts.length) {
           this.onSearch(posts);
         } else {
+          this.onSearch([]);
         }
         
         }).catch(({error}) => {
+          this.onSearch([]);
         });
       }
       $scope.text = '';

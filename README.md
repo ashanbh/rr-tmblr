@@ -1,9 +1,9 @@
 A simple Tumblr Clone
 ======================
 
-## demo 
+## demo (post)
 
-[View demo here](https://rrtumblr.herokuapp.com)
+[View demo here](https://rrtumblr-ang.herokuapp.com)
 
 ## Build
 
