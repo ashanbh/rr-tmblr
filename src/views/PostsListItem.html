@@ -1,0 +1,26 @@
+<div ng-switch="$ctrl.post.type">
+  <div 
+    class='type photo' 
+    ng-switch-when="photo" 
+    ng-style="{'background-image':'url({{$ctrl.post.photos[0].alt_sizes[0].url}})'}">
+  </div>
+  <div 
+  class='type video' 
+  ng-switch-when="video" 
+  ng-style="{'background-image':'url({{$ctrl.post.thumbnail_url}})'}">
+</div>
+  <div 
+    class='type text' 
+    ng-switch-when="text">
+    <div class='textWpr'> 
+        {{$ctrl.post.summary}}
+    </div>
+  </div>
+  <div 
+  class='type default' 
+  ng-switch-default>
+    <div class='textWpr'> 
+      {{$ctrl.post.type}}
+    </div>
+  </div>
+</div>

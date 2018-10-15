@@ -1,6 +1,8 @@
-<div ng-if="posts.length">
-    <i> Something </i>
-</div>
-<div ng-if="!posts.length">
-    <i> Currently no posts to display! :(</i>
+<div class='postList'>
+    <div class='post' ng-if="$ctrl.posts.length" ng-repeat='post in $ctrl.posts'>  
+        <post post='post'/>
+    </div>
+    <div ng-if="!$ctrl.posts.length">
+        <i> Currently no posts to display! :(</i>
+    </div>
 </div>

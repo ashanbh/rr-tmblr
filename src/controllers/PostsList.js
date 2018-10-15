@@ -1,8 +1,10 @@
 import htmlTmpl from '../views/PostsList.html';
 
 export default {
-    bindings: {
-      posts: '='
-    },
+  bindings: {
+    posts: '<'
+  },
+  controller: function($scope) {
+  },
   template: htmlTmpl
 }

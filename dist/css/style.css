@@ -51,15 +51,41 @@ button:hover, .btn:hover{
 .app .postList {
   text-align: center;
 }
-.app .postList img{
+.app .postList .post{
   width: calc(100% / 3);
   display: inline-block;
   vertical-align: top;
   padding: 10px;
+
+}
+
+.app .postList .post .type{
+  position: relative;
+  margin: 10px;
+  background: #f3f3f3;
+  color: #000;
+  background-size: cover;
+  padding-top: calc(100% - 50px);
+}
+
+.app .postList .post .type .textWpr{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .postList .post .default{
+  background: #c0c0c0;
 }
 
 @media only screen and (max-width: 700px) {
-  .app .postList img{
+  .app .postList .post{
     width: 100%;
   }
 }
