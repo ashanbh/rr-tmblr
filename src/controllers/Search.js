@@ -8,7 +8,6 @@ export default {
   },
   controller: function($scope) {
     $scope.submit = () => {
-      console.log('something happened', $scope.text);
       if ($scope.text && $scope.text.trim() !== '') {
         Posts.fetch($scope.text.trim()).then(({blogInfo, posts}) => {
         if (posts.length) {
